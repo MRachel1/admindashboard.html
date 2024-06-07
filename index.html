@@ -1,120 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="admindashboard.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="odindashboard.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://pictogrammers.com">
+
 </head>
 <body>
-<div id="MyPage">
-    <div class="header">
-        <div id="top-right">
-        <img src="https://storage.googleapis.com/pai-images/32e84c95fe434a97a9d18adf4f21b7de.jpeg" width="55" height="55">
-        <div><h3>Hi there,<br>Morgan Oakley</h3></br></div>
+    <!-- SIDEBAR -->
+<aside class="sidebar">
+    <!-- LOGO -->
+        <div class="logo">
+            <span class="material-symbols-outlined">dashboard</span>
+            <!-- <span class="link-name"><b>Dashboard</b></span> -->
+             <img src="material-symbols-outlined"alt="" />
+            <h1>Dashboard</h1>
+            <button type="button" aria-label="close menu" id="close-menu"> 
+            <img src="material-symbols-outlined"alt="" />
+            </button>
         </div>
-    
-        <div id="top-right2">
-        <img src="https://storage.googleapis.com/pai-images/32e84c95fe434a97a9d18adf4f21b7de.jpeg" width="55" height="55">
-        <span class=>Morgan Oakley</span>
+
+        <nav class="">
+            <ul>
+                <li>
+                    <img src="material-symbols-outlined" alt="" />
+                    <span class="material-symbols-outlined">Home</span>
+                    <span>Home</span>
+                 </li>
+
+                <li>
+                    <img src="material-symbols-outlined" alt="" />
+                    <span class="material-symbols-outlined">person</span>
+                    <span>Profile</span>
+                </li>
+
+                 <li>
+                    <img src="material-symbols-outlined" alt="" />
+                    <span class="material-symbols-outlined">mark_email_unread</span>
+                    <span>Messages</span>
+                </li>
+
+                <li>
+                    <img src="material-symbols-outlined" alt="" />
+                    <span class="material-symbols-outlined">history </span>
+                    <span>History</span>
+                </li>
+
+                <li>
+                    <img src="material-symbols-outlined" alt="" />
+                    <span class="material-symbols-outlined">task</span>
+                    <span>Tasks</span>
+                </li>
+
+                 <li>
+                    <img src="material-symbols-outlined"alt="" />
+                    <span class="material-symbols-outlined">communities</span>
+                    <span>Communities</span>
+                </li>
+            </ul>
+        </nav>
+
+          <nav>
+             <ul>
+                <li>
+                    <img src="./assets/icons/cog.svg" alt="" />
+                    <span class="material-symbols-outlined">settings</span>
+                    <span>Settings</span>
+                </li>
+
+                <li>
+                    <img src="./assets/icons/help-box.svg" alt="" />
+                    <span class="material-symbols-outlined">contact_support</span>
+                    <span>Support</span>
+                </li>
+
+                 <li>
+                    <img src="./assets/icons/shield-check.svg" alt="" />
+                    <span class="material-symbols-outlined">lock_clock</span>
+                    <span>Privacy</span>
+                </li>
+            </ul>
+          </nav>
+</aside>
+
+<header class="main__header">
+    <!-- First row -->
+    <div class="header__first-row">
+      <button type="button" aria-label="open sidebar" id="open-sidebar">
+        <img src="./assets/icons/menu.svg" alt="">
+      </button>
+      <div class="search-wrap">
+        <span class="material-symbols-outlined">search</span>
+        <input type="search" name="search" id="search" aria-label="search" />
+      </div>
+
+      <div class="others">
+        <a aria-label="notifications" href="#">
+          <!-- <img src="./assets/icons/bell-ring-outline.svg"alt="" /> -->
+          <span class="material-symbols-outlined">notifications</span>
+        </a>
+
+        <img src="https://img.freepik.com/premium-vector/cute-white-cat-sitting-smiling-cartoon_42750-796.jpg">
+        <p>Morgan Oakley</p>
+      </div>
+    </div>
+
+    <!-- Second row -->
+    <div class="header__second-row">
+        <div class="user">
+        <img src="https://img.freepik.com/premium-vector/cute-white-cat-sitting-smiling-cartoon_42750-796.jpg">
+        <div>
+          <p>Hi there,</p>
+          <p>Morgan Oakley (@morgan)</p>
         </div>
       </div>
-        
-        <div class="container">
-            <div>New</div>
-            <div>Upload</div>
-            <div>Share</div>
-        </div>
-        
-    <ul class="nav-links">
-        <div id="search-logo">
-     <span class="material-symbols-outlined">search</span>
-    </div>
-    </ul>
 
-   <div class="admin">
-    <div class="logo-name">
-   <span class="material-symbols-outlined">dashboard</span>
-   <span class="link-name"><b>Dashboard</b></span>
-    <br><p><span class="material-symbols-outlined">home</span>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <span class="">Home</span>
-    <br><p><span class="material-symbols-outlined">person</span>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <span class="link-name">Profile</span>
-    <br><p><span class="material-symbols-outlined">mark_email_unread</span>
-    <span class="link-name">Message</span>
-    <br><p></p><span class="material-symbols-outlined">history </span>
-    <span class="link-name">History</span>
-    <br><p></p><span class="material-symbols-outlined">task</span>
-    <span class="link-name">Task</span>
-    <br><p></p><span class="material-symbols-outlined">communities</span>
-    <span class="link-name">Communities</span>
-    <br><p><span class="material-symbols-outlined">settings</span>
-    <span class="link-name">Settings</span>
-    <br><p></p> <span class="material-symbols-outlined">contact_support</span>
-    <span class="link-name">Support</span>
-    <br><p></p> <span class="material-symbols-outlined">lock_clock</span>
-    <span class="link-name">Privacy</span>
-     </div>
-</div>
-  </div>
-   
-  <div id="Mid-section"></div>
-    <div class="container2">
-    <h3>Your Projects</h3>
+      <div class="controls">
+        <button type="button">new</button>
+        <button type="button">upload</button>
+        <button type="button">share</button>
+      </div>
     </div>
-   
-        <div class="container3">
-        <h3>Announcements</h3>
-        </div>
+</header>
 
-        <div class="container3a">
-            <div id="item1">
-                <h4>Site maintenance</h4>
-                </div>
-                <div id="item2">
-            <h4>Community Share Day</h4>
+<main class="content">
+    <section class="projects">
+      <h2>your projects</h2>
+      <div class="projects__list">
+        <article>
+          <h3>super cool project</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, fugiat?</p>
+          <div class="controls">
+            <button type="button" aria-label="favourite">
+              <span class="material-symbols-outlined">star</span>
+            </button>
+
+            <button type="button" aria-label="view">
+              <span class="material-symbols-outlined">reviews</span>
+            </button>
+            <button type="button" aria-label="share" class="share">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <h3>less cool project</h3>
+          <p>dolores totam necessitatibus
+            repellendus rerum, voluptates dolorem. Laboriosam quos porro, explicabo possimus sapiente asperiores cum.
+          </p>
+          <div class="controls">
+            <button type="button" aria-label="favourite">
+              <span class="material-symbols-outlined">star</span>
+            </button>
+
+            <button type="button" aria-label="view">
+              <span class="material-symbols-outlined">reviews</span>
+            </button>
+            <button type="button" aria-label="share" class="share">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <h3>impossible app</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, fugiat?</p>
+          <div class="controls">
+            <button type="button" aria-label="favourite">
+              <span class="material-symbols-outlined">star</span>
+            </button>
+
+            <button type="button" aria-label="view">
+              <span class="material-symbols-outlined">reviews</span>
+            </button>
+            <button type="button" aria-label="share" class="share">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <h3>easy peasy app</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, fugiat?</p>
+          <div class="controls">
+            <button type="button" aria-label="favourite">
+              <span class="material-symbols-outlined">star</span>
+            </button>
+
+            <button type="button" aria-label="view">
+              <span class="material-symbols-outlined">reviews</span>
+            </button>
+            <button type="button" aria-label="share" class="share">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <h3>ad blocker</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, fugiat?</p>
+          <div class="controls">
+            <button type="button" aria-label="favourite">
+              <span class="material-symbols-outlined">star</span>
+            </button>
+
+            <button type="button" aria-label="view">
+              <span class="material-symbols-outlined">reviews</span>
+            </button>
+            <button type="button" aria-label="share" class="share">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <h3>money maker</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, fugiat?</p>
+          <div class="controls">
+            <button type="button" aria-label="favourite">
+              <span class="material-symbols-outlined">star</span>
+            </button>
+
+            <button type="button" aria-label="view">
+              <span class="material-symbols-outlined">reviews</span>
+            </button>
+            <button type="button" aria-label="share" class="share">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <h3>world peace builder</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, fugiat?</p>
+          <div class="controls">
+            <button type="button" aria-label="favourite">
+              <span class="material-symbols-outlined">star</span>
+            </button>
+
+            <button type="button" aria-label="view">
+              <span class="material-symbols-outlined">reviews</span>
+            </button>
+            <button type="button" aria-label="share" class="share">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <h3>no traffic maker</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, fugiat?</p>
+          <div class="controls">
+            <button type="button" aria-label="favourite">
+              <span class="material-symbols-outlined">star</span>
+            </button>
+
+            <button type="button" aria-label="view">
+              <span class="material-symbols-outlined">reviews</span>
+            </button>
+            <button type="button" aria-label="share" class="share">
+              <span class="material-symbols-outlined">share</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="content__second-row">
+      <section class="announcements">
+        <h2>announcements</h2>
+
+        <div class="announcements__list">
+          <article>
+            <h3>site maintenance</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, reprehenderit.</p>
+          </article>
+
+          <article>
+            <h3>community share day</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quibusdam.</p>
+          </article>
+
+          <article>
+            <h3>updated privacy policy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, soluta.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="trending">
+
+        <h2>trending</h2>
+
+        <div class="trending__list">
+          <div class="trending__item">
+            <!-- <img src="./assets/images/cat.jpeg" alt="" class="trending__avatar"> -->
+            <img src="https://t3.ftcdn.net/jpg/00/50/07/64/360_F_50076454_TCvZEw37VyB5ZhcwEjkJHddtuV1cFmKY.jpg">
+            <div>
+              <h4>@tegan</h4>
+              <p>world peace builder</p>
             </div>
-            <div id="item3">
-             <h4>Updated Privacy Policy</h4>
-             </div>
-        </div>
-        
-        <div class="container4">
-        <div><h3>Super Cool Project</h3><h4>This is a beauiful admin dashboard</h4></div>
+          </div>
+
+          <div class="trending__item">
+            <!-- <img src="./assets/images/cat.jpeg" alt="" class="trending__avatar"> -->
+            <img src="https://img.freepik.com/premium-vector/cute-white-cat-sitting-smiling-cartoon_42750-796.jpg">
+            <div>
+              <h4>@morgan</h4>
+              <p>super cool project</p>
+            </div>
+          </div>
+
+          <div class="trending__item">
+            <!-- <img src="./assets/images/cat.jpeg" alt="" class="trending__avatar"> -->
+            <img src="https://i.pinimg.com/originals/db/d8/1b/dbd81beb04bae6ef3991cb95bb00680e.png">
+            <div>
+              <h4>@kendall</h4>
+              <p>life changing app</p>
+            </div>
+          </div>
+
+          <div class="trending__item">
+            <!-- <img src="./assets/images/cat.jpeg" alt="" class="trending__avatar"> -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdaWSEVJ6LIBO7hYTDyCFdDVIunnPzaaCqYA&s">
+            <div>
+              <h4>@alex</h4>
+              <p>no traffic maker</p>
+            </div>
+          </div>
         </div>
 
-
-        <div class="container5">
-        <div><h3>Less Cool Project</h3><h4>This is a beauiful admin dashboard</h4></div>
-        </div>
-
-        <div class="container6">
-        <div><h3>Impossible App</h3><h4>This is a beauiful admin dashboard</h4></div>
-        </div>
-
-        <div class="container7">
-        <div><h3>Easy Peasy App</h3><h4>This is a beauiful admin dashboard</h4></div>
-        </div>
-        
-        <div class="container8">
-        <div><h3>Ad Blocker</h3><h4>This is a beauiful admin dashboard</h4></div>
-        </div>  
-
-        <div class="container9">
-        <div><h3>Money Maker</h3><h4>This is a beauiful admin dashboard</h4></div>
-      </div>
-    
-      <div class="container10">
-        <div><h3>Trending</h3></div>
-        <br><img src="data:image/jpeg;base64,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" width="40" height="40">@tegan<br>World Peace Builder</br>
-        <br><img src="https://storage.googleapis.com/pai-images/32e84c95fe434a97a9d18adf4f21b7de.jpeg" width="55" height="55">@morgan<br>Super Cool Project</br>
-       <br> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc21dupZzd2_fIldSPTOJ9PgGRr8U5Dn0FBQ&s" width="40" height="40">@kendall<br>Life Changing App</br>
-       <br> <img src="data:image/jpeg;base64,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" width="40" height="40">@alex<br>No Traffic Maker</br>
+      </section>
     </div>
-        </div>
-        </div>
-    </div>
+  </main>                
 </body>
 </html>
